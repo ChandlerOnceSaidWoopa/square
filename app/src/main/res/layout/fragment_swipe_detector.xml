@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:layout_marginTop="20dp"
+        android:text="Swipe"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingTop="20dip"
+        android:paddingRight="10dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parse State:"
+            android:textColor="#FF000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/parseState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff888888"
+            android:maxLines="10"
+            android:minLines="5"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Bytes:"
+            android:textColor="#FF000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/bytes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff888888"
+            android:hint="Please Swipe Card"
+            android:maxLines="10"
+            android:minLines="5"
+            android:padding="5dip"
+            android:textColor="#FF000000"
+            android:textColorHint="#ff000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Bits:"
+            android:textColor="#FF000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/bits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff888888"
+            android:hint="Please Swipe Card"
+            android:maxLines="10"
+            android:minLines="5"
+            android:padding="5dip"
+            android:textColor="#FF000000"
+            android:textColorHint="#ff000000"
+            android:textSize="15sp" />
+
+        <!--    <Button android:layout_height="wrap_content" android:layout_width="80dip" android:textSize="20sp" android:text="Stop" android:id="@+id/stopbtn" android:layout_margin="10dip"/>-->
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
